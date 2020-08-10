@@ -167,11 +167,11 @@ vagrant box add --name centos-7-8 centos-7.8.2003-kernel-5-x86_64-Minimal.box
 ```
 vagrant box list
 centos-7-8            (virtualbox, 0)
-```
+
 
 Он будет называться `centos-7-8`, данное имя мы задали при помощи параметра `name` при импорте.
 
-# **помещение образа в Vagrant cloud**
+**помещение образа в Vagrant cloud**
 
 Чтобы поделимся образом, его нужно зальем его в Vagrant Cloud. Можно залить через web-интерфейс, но так же `vagrant` позволяет это проделать через CLI.
 Логинимся в `vagrant cloud`, указывая e-mail, пароль
