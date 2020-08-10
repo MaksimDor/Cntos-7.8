@@ -35,7 +35,7 @@ cd C:\Packer
 
 с помощью блокнота создаём файл CentOS с расширением .json 
 
-{
+```{
   "builders": [
     {
       "boot_command": [
