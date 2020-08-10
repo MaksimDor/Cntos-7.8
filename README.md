@@ -114,6 +114,7 @@ cd C:\Packer
 }
 ```
 Данный скрипт будет брать образ CentOS из репозитория на Yandex
+
 http://mirror.yandex.ru/centos/7.8.2003/isos/x86_64/CentOS-7-x86_64-Minimal-2003.iso
 
 В переменные (`variables`) заводим с версию, названием проекта и имя образа (artifact):
@@ -140,8 +141,8 @@ http://mirror.yandex.ru/centos/7.8.2003/isos/x86_64/CentOS-7-x86_64-Minimal-2003
 Данные скрипты находятся в папке С:\packer\scripts
 
 
-        "scripts/stage-1-kernel-update.sh",
-        "scripts/stage-2-clean.sh"
+        stage-1-kernel-update.sh
+        stage-2-clean.sh
 
 Скрипты будут выполнены в порядке указания. Первый скрипт включает себя набор команд, которые обновляют ядро. 
 Второй скрипт занимается подготовкой системы к упаковке в образ. Она заключается в очистке директорий с логами, временными файлами, кешами. 
@@ -179,7 +180,7 @@ Vagrant Cloud username or email: <user_email>
 Password (will be hidden): 
 You are now logged in.
 ```
-Теперь публикуем полученный бокс:
+**Теперь публикуем полученный бокс:**
 ```
 vagrant cloud publish --release <username>/centos-7-8 1.0 virtualbox centos-7.8.2003-kernel-5-x86_64-Minimal.box
 ```
