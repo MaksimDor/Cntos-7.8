@@ -151,7 +151,8 @@ http://mirror.yandex.ru/centos/7.8.2003/isos/x86_64/CentOS-7-x86_64-Minimal-2003
 ### **Создание образа**
 Для создания образа системы переходим в директорию `C:\packer` и в ней выполняем команду:
 
-```packer build centos.json
+```
+packer build centos.json
 ```
 
 Исходя файла `config.json` будет скачан исходный iso-образ CentOS, установлен на виртуальную машину в автоматическом режиме, 
