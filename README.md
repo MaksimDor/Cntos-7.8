@@ -175,8 +175,8 @@ centos-7-8            (virtualbox, 0)
 
 Чтобы поделимся образом, его нужно зальем его в Vagrant Cloud. Можно залить через web-интерфейс, но так же `vagrant` позволяет это проделать через CLI.
 Логинимся в `vagrant cloud`, указывая e-mail, пароль
-```
-vagrant cloud auth login
+
+```vagrant cloud auth login
 Vagrant Cloud username or email: <user_email>
 Password (will be hidden): 
 You are now logged in.
@@ -203,6 +203,7 @@ name:            centos-7-8
 private:         false
 ...
 providers:       virtualbox
+```
 
-**Жирный текст (bold)**
+
 **В результате я склонировал с базового репозитория CentOS, создал свой образ с обновленным ядром и опубликовал его в vagrant cloud**
