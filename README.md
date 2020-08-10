@@ -195,8 +195,8 @@ vagrant cloud publish --release <username>/centos-7-8 1.0 virtualbox centos-7.8.
 
 После успешной загрузки получаем сообщение:
 
-```
-Complete! Published <username>/centos-7-8
+
+```Complete! Published <username>/centos-7-8
 tag:             <username>/centos-7-8
 username:        <username>
 name:            centos-7-8
@@ -204,5 +204,5 @@ private:         false
 ...
 providers:       virtualbox
 
-
-** В результате я склонировал с базового репозитория CentOS, создал свой образ с обновленным ядром и опубликовал его в vagrant cloud. **
+**Жирный текст (bold)**
+**В результате я склонировал с базового репозитория CentOS, создал свой образ с обновленным ядром и опубликовал его в vagrant cloud**
